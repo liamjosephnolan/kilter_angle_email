@@ -29,4 +29,5 @@ jobs:
         env:
           EMAIL: ${{ secrets.EMAIL }}  # Inject secret EMAIL from GitHub Secrets
           PASSWORD: ${{ secrets.PASSWORD }}  # Inject secret PASSWORD from GitHub Secrets
+          RECIPIENT: ${{ secrets.PASSWORD }}  # Inject secret recipent rom GitHub Secrets
 
