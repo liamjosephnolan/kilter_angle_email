@@ -54,7 +54,7 @@ try:
     now = now.strftime('%Y-%m-%d %H:%M:%S')
     msg['Subject'] = "Kilter Status @" + now 
     msg['From'] = email
-    msg['To'] = 'sinnhuberk@gmail.com'  # Replace with recipient email address
+    msg['To'] = os.getenv('RECIPIENT')  # Replace with recipient email address
 
     text = f"""Hello,
 
