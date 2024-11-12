@@ -55,6 +55,7 @@ try:
     msg['Subject'] = "Kilter Status @" + now 
     msg['From'] = email
     recipient = os.getenv('RECIPIENT')
+    print(recipient)
     if not recipient:
         print("Error: Recipient email is not set.")
         exit(1)
