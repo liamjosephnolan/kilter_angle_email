@@ -59,7 +59,9 @@ try:
         print("Error: Recipient email is not set.")
         exit(1)
     msg['To'] = recipient
-        text = f"""Hello,
+    
+    
+    text = f"""Hello,
 
     I just wanted to let you know that today at {now_time} the kilter is currently set to {kilter_angle} 
 
