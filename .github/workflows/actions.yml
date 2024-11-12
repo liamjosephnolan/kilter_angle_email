@@ -28,4 +28,4 @@ jobs:
           EMAIL: ${{ secrets.EMAIL }}  # Use the stored secret for email
           PASSWORD: ${{ secrets.PASSWORD }}  # Use the stored secret for password
         run: |
-          python your_script.py  # Replace with your actual script filename
+          angle_email.py  # Replace with your actual script filename
