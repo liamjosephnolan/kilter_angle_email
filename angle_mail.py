@@ -27,7 +27,7 @@ if html_content:
     website_soup = BeautifulSoup(html_content, 'html.parser')
 
 
-
+kilter_angle = None
 
 # Search for a text that contains a number followed by the degree symbol (°)
     match = re.search(r'(\d+°)', website_soup.get_text())

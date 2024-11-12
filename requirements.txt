@@ -1,0 +1,4 @@
+requests
+beautifulsoup4
+python-dotenv  # Optional, if you plan to use .env files for managing sensitive data
+
