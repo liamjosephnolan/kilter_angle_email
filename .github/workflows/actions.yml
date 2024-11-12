@@ -9,9 +9,11 @@ jobs:
   send_email:
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner
     steps:
-      - uses: actions/checkout@v4.2.2
+      - name: Checkout the code
+        uses: actions/checkout@v4  # Ensure to use the latest version of checkout
+
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3  # Use the latest version of setup-python
         with:
           python-version: '3.x'  # Specify Python version (adjust as needed)
 
@@ -25,4 +27,4 @@ jobs:
           EMAIL: ${{ secrets.EMAIL }}  # Use the stored secret for email
           PASSWORD: ${{ secrets.PASSWORD }}  # Use the stored secret for password
         run: |
-          angle_email.py  # Replace with your actual script filename
+          python angle_email.py  # Run the script using Python
