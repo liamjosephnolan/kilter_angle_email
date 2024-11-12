@@ -12,7 +12,10 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4.2.2
-
+        
+      - name: Set Timezone to Innsbruck
+        run: sudo timedatectl set-timezone Europe/Vienna
+        
       - name: Set Up Python
         uses: actions/setup-python@v4
         with:
