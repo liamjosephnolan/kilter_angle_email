@@ -54,9 +54,12 @@ try:
     now = now.strftime('%Y-%m-%d %H:%M:%S')
     msg['Subject'] = "Kilter Status @" + now 
     msg['From'] = email
-    msg['To'] = os.getenv('RECIPIENT')  # Replace with recipient email address
-
-    text = f"""Hello,
+    recipient = os.getenv('RECIPIENT')
+    if not recipient:
+        print("Error: Recipient email is not set.")
+        exit(1)
+    msg['To'] = recipient
+        text = f"""Hello,
 
     I just wanted to let you know that today at {now_time} the kilter is currently set to {kilter_angle} 
 
