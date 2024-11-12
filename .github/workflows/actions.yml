@@ -1,8 +1,6 @@
 name: run angle_email.py
 
 on:
-  schedule:
-    - cron: '0 * * * *'  # Run hourly (adjust as needed)
   workflow_dispatch:  # Allow manual triggering from GitHub UI
   
 jobs:
