@@ -24,7 +24,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Script
-        run: python angle_email.py
+        run: python angle_mail.py
         env:
           EMAIL: ${{ secrets.EMAIL }}  # Inject secret EMAIL from GitHub Secrets
           PASSWORD: ${{ secrets.PASSWORD }}  # Inject secret PASSWORD from GitHub Secrets
