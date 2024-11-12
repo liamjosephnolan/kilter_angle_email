@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3  # Use the latest version of setup-python
         with:
-          python-version: '3.x'  # Specify Python version (adjust as needed)
+          python-version: '3.10.12'  # Specify Python version (adjust as needed)
 
       - name: Install dependencies
         run: |
